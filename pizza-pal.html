@@ -3,38 +3,47 @@
   <head>
     <title>Pizza Pal</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/stylesheet.css" media="screen">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
     <div class="container">
-      <h1>Pizza Pal</h1>
-      <h2>Place Your Order Below</h2>
-      <form id="pizzaOrder">
+        <h1>Pizza <img src="css/images/pizza.jpg" alt="pizza"> Pal</h1>
 
-        <label for="numberOfPizza">Quantity:</label>
-        <input type="text" id="numberOfPizza">
-        <br>
-        <label for="pizzaSize">Size: </label>
-        <select id="size">
-          <option>Select:</option>
-          <option value="x-large">Family</option>
-          <option value="large">Large</option>
-          <option value="medium">Medium</option>
-          <option value="small">Small</option>
-        </select>
-        <br>
-        <label for="topping">Type: </label>
-        <input type="text" id="topping" placeholder="toppings, etc.">
+          <form id="pizzaOrder">
+            <center>
+            <h3>How Many?</h3>
+            <input type="text" id="numberOfPizza">
 
-        <button name="submit">Get Cost</button>
-      </form>
-      <div>
-        <h2>Total:</h2>
-        <h3 id="totalCost"></h3>
+            <div class="dropdown">
+              <h3>What Size: </h3>
+              <select id="size" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+
+                <option>Select</option>
+                <option value="x-large">Family</option>
+                <option value="large">Large</option>
+                <option value="medium">Medium</option>
+                <option value="small">Small</option>
+              </select>
+            </div>
+
+
+            <h3>Type/Toppings: </h3>
+            <h5>(enter in toppings seperated<br> by commas and spaces)</h5>
+            <input type="text" id="topping" placeholder="sausage, olives, etc.">
+
+            <br>
+            <br>
+            <div class="btn">
+                <button name="submit" class="btn btn-default btn-lg">Go</button>
+            </div>
+          </form>
+
+          <h2>Total: <h1 id="totalCost"></h1></h2>
       </div>
-    </div>
-
+    </center>
   </body>
 </html>
