@@ -10,7 +10,19 @@ Pizza.prototype.totalCost = function() {
   var toppingCost = (toppingQuantity * 2);
   var pizzaSizeCost = 0;
 
+// unfinished //
 // radio button option for classic pizza choices for version 2.0
+
+  // function Classic(classicPizza) {
+  //   this.classicPizza = classicPizza;
+  // }
+  //
+  // Classic.prototype.classicCost = function() {
+  //   var classicCost = 20;
+  //   var totalClassicCost = numberOfPizzas (* classicCost);
+  // }
+
+// // // // // // 
 
   if (this.pizzaSize === "large") {
     pizzaSizeCost = 20;
