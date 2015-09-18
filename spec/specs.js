@@ -7,7 +7,7 @@ describe('Pizza', function() {
   });
 
   it("calculates the new pizza price based on user input", function() {
-    var testPizza = new Pizza("small", 2, "cheese", "pepperoni");
-    expect(testPizza.totalCost()).to.equal(11);
+    var testPizza = new Pizza("small", 2, "cheese");
+    expect(testPizza.totalCost()).to.equal(32);
   });
 });
