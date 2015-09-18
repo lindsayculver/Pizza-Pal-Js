@@ -15,12 +15,59 @@
         <div class="user-input">
           <form id="pizza">
             <div class="form-group">
-              <label for="quantity">How many Pizza's would you like to order?</label>
+              <label for="quantity">How many Pizzas in your order?</label>
               <input type="text" class="form-control" id="quantity">
             </div>
-            </div>
-          </form>
 
+              <div class="options-radio">
+              <h3>Classic Pizza Options:</h3>
+              <label>
+                <input type="radio" name="classic" id="optionsRadios1" value="cheese">
+                Cheese | 3 Cheese with Red Sauce
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="classic" id="optionsRadios2" value="pepperoni">
+                Pepperoni | Pepperonis and Homemade Mozzerella Cheese with Red Sauce
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="classic" id="optionsRadios3" value="margherita">
+                Margherita | Homemade Mozzerella Cheese, Garden Fresh Tomato and Basil with Red Sauce
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="classic" id="optionsRadios4" value="veggie">
+                Vegetable | Seasonal Roasted Veggies with 3 Cheese and Red Sauce
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="classic" id="optionsRadios5" value="hawaiian">
+                Hawaiian | Golden Maui Pineapples, Spiced Thin Sliced Ham and 3 Cheese with White Sauce.
+              </label>
+            </div>
+              <div class="option-size">
+                <h3>Size Options:</h3>
+                <label>
+                  <input type="radio" name="size" id="optionsRadios6" value="small">
+                  Small | 16"
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="size" id="optionsRadios7" value="medium">
+                  Medium | 20"
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="size" id="optionsRadios8" value="large">
+                  Large | 24"
+                </label>
+              </div>
+          </div>
+          <button type="submit" class="btn btn-info">Get Price</button>
+        </form>
+        <h2 id="show-price">
+          </h2>
         </div>
       </div>
     </div>
