@@ -22,7 +22,7 @@ Pizza.prototype.totalCost = function() {
   //   var totalClassicCost = numberOfPizzas (* classicCost);
   // }
 
-// // // // // // 
+// // // // // //
 
   if (this.pizzaSize === "large") {
     pizzaSizeCost = 20;

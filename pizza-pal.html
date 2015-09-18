@@ -14,13 +14,36 @@
 
           <form id="pizzaOrder">
             <center>
+            <div class="radio">
+              <h3><strong>Classic Choices</strong></h3>
+              <label>
+                <input type="radio" name="classic" id="optionsRadios2" value="pepperoni">
+                Pepperoni | Pepperonis, 3 cheeses, Red Sauce
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="classic" id="optionsRadios1" value="margherita">
+                Margherita | Homemade Mozzeralla, Garden Grown Tomato and Basil, Red Sauce
+              </label>
+
+              <br>
+              <label>
+                <input type="radio" name="classic" id="optionsRadios3" value="veggie">
+                Vegetable | Garden Grown Seasonal Roasted Veggies, 3 cheeses, Red Sauce
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="classic" id="optionsRadios4" value="hawaiian">
+                Hawaiian | Golden Maui Pineapple, Thin Spiced Ham, White Sauce
+              </label>
+            </div>
+
             <h3>How Many?</h3>
             <input type="text" id="numberOfPizza">
 
             <div class="dropdown">
               <h3>What Size: </h3>
               <select id="size" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
 
                 <option>Select</option>
                 <option value="x-large">Family</option>
@@ -30,10 +53,10 @@
               </select>
             </div>
 
-
+            <h3>Build your own:</h3>
             <h3>Type/Toppings: </h3>
             <h5>(enter in toppings seperated<br> by commas and spaces)</h5>
-            <input type="text" id="topping" placeholder="cheese included">
+            <input type="text" id="topping" placeholder=" 3 cheeses included">
 
             <br>
             <br>
