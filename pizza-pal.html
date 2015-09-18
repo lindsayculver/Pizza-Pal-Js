@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Pizza Pal</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" media="screen">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Pizza Pal</title>
   </head>
   <body>
     <div class="container">
       <h1>Pizza Pal</h1>
+      <h2>Place Your Order Below</h2>
       <form id="pizzaOrder">
 
-      <label for="pizzaSize">Pizza Size: </label>
+        <label for="numberOfPizza">Quantity:</label>
+        <input type="text" id="numberOfPizza">
+        <br>
+        <label for="pizzaSize">Size: </label>
         <select id="size">
-          <option>Select Size</option>
-          <option value="family">Family</option>
+          <option>Select:</option>
+          <option value="x-large">Family</option>
           <option value="large">Large</option>
           <option value="medium">Medium</option>
           <option value="small">Small</option>
         </select>
-
-      <label for="type">Type of Pizza</label>
+        <br>
+        <label for="topping">Type: </label>
         <input type="text" id="topping" placeholder="toppings, etc.">
 
-        <label for="numberOfPizzas">Number of Pizzas:</label>
-        <input type="text" id="numberOfPizzas">
-
-      <button name="submit">Order</button>
+        <button name="submit">Get Cost</button>
       </form>
-
       <div>
-        <h2>Total Cost:</h2>
+        <h2>Total:</h2>
         <h3 id="totalCost"></h3>
       </div>
     </div>
+
   </body>
 </html>
